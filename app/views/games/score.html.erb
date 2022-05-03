@@ -1,0 +1,9 @@
+<h1>Result</h1>
+
+<% if @json["found"] == true %>
+  <p><%= "Congratulations! #{@word} is a valid english word!" %> </p>
+<% else %>
+  <p><%= "Sorry but #{@word} does not seem to be a valid english word..." %></p>
+<% end %>
+
+<%= link_to "Play again", new_path %>
